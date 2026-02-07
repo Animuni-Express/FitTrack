@@ -9,12 +9,12 @@ const exercises = [
 
 
 const dummyFriends = [
-    { name: 'Alex T.', points: 15400, avatar: 'AT' },
-    { name: 'Sarah K.', points: 12300, avatar: 'SK' },
-    { name: 'Mike R.', points: 9800, avatar: 'MR' },
+    { name: 'Aniket S.', points: 15500, avatar: 'AE' },
+    { name: 'Ishan C.', points: 12500, avatar: 'IC' },
+    { name: 'Krishna R.', points: 9500, avatar: 'KR' },
     { name: 'You', points: 0, avatar: 'YO', isUser: true },
-    { name: 'Jessica L.', points: 8500, avatar: 'JL' },
-    { name: 'David B.', points: 6200, avatar: 'DB' }
+    { name: 'Aarav K.', points: 8500, avatar: 'AK' },
+    { name: 'Ram Sharma.', points: 6500, avatar: 'RS' }
 ];
 
 // DOM Elements
@@ -186,4 +186,5 @@ closeMenuBtn.addEventListener('click', () => {
 
 // Start
 init();
+
 
