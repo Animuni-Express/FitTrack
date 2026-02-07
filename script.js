@@ -1,10 +1,12 @@
 const exercises = [
-    { id: 'ex1', name: 'Push Ups', reps: '3 Sets of 15', icon: 'fa-person-running', completed: false },
-    { id: 'ex2', name: 'Squats', reps: '3 Sets of 20', icon: 'fa-person', completed: false },
-    { id: 'ex3', name: 'Plank', reps: '3 Sets of 1 min', icon: 'fa-stopwatch', completed: false },
-    { id: 'ex4', name: 'Lunges', reps: '3 Sets of 12/leg', icon: 'fa-person-walking', completed: false },
-    { id: 'ex5', name: 'Burpees', reps: '3 Sets of 10', icon: 'fa-fire', completed: false }
+  { id: 'ex3', name: 'Spot Jogging',  amount: '20 seconds',        icon: 'fa-stopwatch',        completed: false },
+  { id: 'ex1', name: 'Jumping Jacks', amount: '10',                icon: 'fa-person-running',   completed: false },
+  { id: 'ex5', name: 'High Knees',    amount: '20 seconds',        icon: 'fa-fire',             completed: false },
+  { id: 'ex4', name: 'Lunges',        amount: '5 per leg',         icon: 'fa-person-walking',   completed: false },
+  { id: 'ex2', name: 'Squats',        amount: '5',                 icon: 'fa-person',           completed: false }
 ];
+
+
 
 const dummyFriends = [
     { name: 'Alex T.', points: 15400, avatar: 'AT' },
@@ -52,6 +54,7 @@ function checkStreakRepair() {
 }
 
 function renderExercises() {
+	//for rendering the exercises in the app
     exerciseList.innerHTML = '';
     exercises.forEach((ex, index) => {
         const item = document.createElement('div');
@@ -65,7 +68,7 @@ function renderExercises() {
                 </div>
                 <div class="exercise-details">
                     <h4>${ex.name}</h4>
-                    <p>${ex.reps}</p>
+                    <p>${ex.amount}</p>
                 </div>
             </div>
             <div class="check-circle">
@@ -183,3 +186,4 @@ closeMenuBtn.addEventListener('click', () => {
 
 // Start
 init();
+
